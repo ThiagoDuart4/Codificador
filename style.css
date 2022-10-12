@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: red;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-image: url(codigo-binario-gif-animado-7.gif);
+}
+.container{
+  width: 900px;
+  height: 100vh;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1{
+    font-size: 4em;
+}
+
+.container textarea{
+    border-radius: 15px;
+    font-size: 1.5em;
+    outline: none;
+    height: 150px;
+}
+
+.click-btn button{
+    width: 150px;
+    height: 35px;
+    border: none;
+   border-radius: 15px;
+  margin: 15px;
+
+}
+
+.radio-btn{
+   margin-left: 15px;
+}
+
+.btn-radio-box{
+ display: flex;
+}

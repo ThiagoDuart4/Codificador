@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-.equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Codificador</h1>
+     
+        <textarea name="message" class="result" placeholder="Digite aqui"></textarea>
+      <div class="key-btn"> 
+        <span id="label">Chave Cifra: </span>
+        <button onclick="prev()">-</button>
+        <span id="key">1</span>
+        <button onclick="next()">+</button><br/><br/>
+    </div>  
+       
+
+        <p  class="result2"></p>
+        
+        <label for="selecao">Código</label>
+        <select name="selecao" id="codigo">
+          <option disabled selected>--Selecione--</option>
+          <option value="cifra">Cifra de Cesar</option>
+          <option value="base">Base 64</option>
+        </select><br>
+
+        <div class="btn-radio-box">  
+            <div class="radio-btn"> 
+                 <input type="radio" id="codificar" name="codigo" value="codificar" class="codifica">
+        <label for="codificar">Codificar</label>
+    </div>
+
+          <div class="radio-btn"> <input type="radio" id="decodificar" name="codigo" value="decodificar" class="decodifica">
+        <label for="decodificar">Decodificar</label>
+    </div>
+       
+    </div>
+      
+
+        
+
+<div class="click-btn"> 
+     <button class="input" onclick="codiBase()" >Codifica</button>
+        <button class="output" onclick="decoBase()">Decodifica</button><br>
+    
+    </div>
+      
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
