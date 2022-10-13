@@ -22,24 +22,24 @@
     </div>  
        
 
-        <p  class="result2"></p>
         
-        <label for="selecao">Código</label>
+        <div class="select-main"> <label for="selecao">Código</label>
         <select name="selecao" id="codigo">
           <option disabled selected>--Selecione--</option>
           <option value="cifra">Cifra de Cesar</option>
           <option value="base">Base 64</option>
-        </select><br>
+        </select><br></div>
+       
 
         <div class="btn-radio-box">  
-            <div class="radio-btn"> 
-                 <input type="radio" id="codificar" name="codigo" value="codificar" class="codifica">
-        <label for="codificar">Codificar</label>
-    </div>
+                    <div class="radio-btn"> 
+                        <input type="radio" id="codificar" name="codigo" value="codificar" class="codifica">
+                <label for="codificar">Codificar</label>
+            </div>
 
-          <div class="radio-btn"> <input type="radio" id="decodificar" name="codigo" value="decodificar" class="decodifica">
-        <label for="decodificar">Decodificar</label>
-    </div>
+                <div class="radio-btn"> <input type="radio" id="decodificar" name="codigo" value="decodificar" class="decodifica">
+                <label for="decodificar">Decodificar</label>
+            </div>
        
     </div>
       
@@ -51,9 +51,13 @@
         <button class="output" onclick="decoBase()">Decodifica</button><br>
     
     </div>
-      
+
+   
+    <p  class="result2"></p>
 
     </div>
+
+   
 
     <script src="script.js"></script>
 </body>

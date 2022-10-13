@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: red;
+   color:red;
 }
 
 body{
@@ -12,11 +14,12 @@ body{
     align-items: center;
     justify-content: center;
    background-image: url(codigo-binario-gif-animado-7.gif);
+   font-family: 'Press Start 2P', cursive;;
 }
 .container{
   width: 900px;
   height: 100vh;
-  border: 1px solid red;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +27,9 @@ body{
 }
 
 h1{
-    font-size: 4em;
+    font-size: 3em;
+    color: white;
+    margin-bottom: 50px;
 }
 
 .container textarea{
@@ -32,21 +37,101 @@ h1{
     font-size: 1.5em;
     outline: none;
     height: 150px;
+    width: 300px;
+    text-align: center;padding-top: 60px;
+    background-color: black;
+    color: #039603;
+    border-color: #039603;
 }
 
 .click-btn button{
     width: 150px;
     height: 35px;
     border: none;
-   border-radius: 15px;
+   border-radius: 5px;
   margin: 15px;
+  background-color: black;
+    color: #039603;
+  cursor: pointer;
+  border: 1px solid #039603;
 
+}
+.click-btn button:hover{
+    opacity: 0.8;
+    background-color: #039603;
+    color: black;
+   
+    transition: 0.4s;
 }
 
 .radio-btn{
    margin-left: 15px;
+ 
 }
 
 .btn-radio-box{
  display: flex;
+}
+
+.radio-btn label{
+    color: white;
+}
+
+
+.key-btn { 
+   margin-top: 20px;
+  
+}
+
+.key-btn  span{
+    color: white;
+    font-size: 0.8em;
+}
+
+
+.key-btn button{
+    width: 30px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: black;
+    color: #039603;
+    border: 1px solid #039603;
+}
+
+.key-btn button:hover{
+    opacity: 0.8;
+    background-color: #039603;
+    color: black;
+   
+    transition: 0.4s;
+}
+
+.select-main{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.select-main label{
+    color: white;
+}
+
+.select-main select{
+    outline: none;
+    background-color: black;
+    color: #039603;
+    height: 30px;
+    border-radius: 8px;
+    margin-top: 5px;
+    border:  1px solid #039603;
+}
+
+.select-main option{
+    color: white;
+}
+
+.result2{
+    color: white;
+    font-size: 1.5em;
+    margin-top: 30px;
 }
