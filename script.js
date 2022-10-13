@@ -1,5 +1,6 @@
 // base 64
 
+// variaveis globais
 var btnCodifica = document.querySelector('.input');
 var btnDecodifica = document.querySelector('.output');
 var result = document.querySelector('.result');
@@ -9,7 +10,7 @@ var result2 = document.querySelector('.result2')
 
 
 
-
+// function codificando base64
 function codiBase(e) {
   
     var codigo = document.querySelector('#codigo').value;
@@ -26,6 +27,7 @@ function codiBase(e) {
    }
 }
 
+// functiond decodificando base64
 function decoBase() {
     
     var codigo = document.querySelector('#codigo').value;
@@ -44,6 +46,8 @@ function decoBase() {
 
 // Cifra de cesar
 
+
+// eventos de click e funçoes determinando a chamada da funçao de Cifra de cesar
 
 btnCodifica.addEventListener('click',function (e) {
     e.preventDefault()
@@ -74,6 +78,7 @@ btnDecodifica.addEventListener('click',function (e) {
 })
 
 
+// Chave cifra
 
 // KEY
 let key = +document.getElementById("key").innerHTML;

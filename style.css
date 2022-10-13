@@ -16,6 +16,8 @@ body{
    background-image: url(codigo-binario-gif-animado-7.gif);
    font-family: 'Press Start 2P', cursive;;
 }
+
+/* inicio do container principal */
 .container{
   width: 900px;
   height: 100vh;
@@ -26,12 +28,14 @@ body{
   flex-direction: column;
 }
 
+/* logo */
 h1{
     font-size: 3em;
     color: white;
     margin-bottom: 50px;
 }
 
+/* TEXTAREA */
 .container textarea{
     border-radius: 15px;
     font-size: 1.5em;
@@ -44,6 +48,7 @@ h1{
     border-color: #039603;
 }
 
+/* todos os buttons */
 .click-btn button{
     width: 150px;
     height: 35px;
@@ -106,6 +111,7 @@ h1{
     transition: 0.4s;
 }
 
+/* select option */
 .select-main{
     display: flex;
     flex-direction: column;
@@ -130,6 +136,7 @@ h1{
     color: white;
 }
 
+/* resultado final */
 .result2{
     color: white;
     font-size: 1.5em;

@@ -10,54 +10,59 @@
 </head>
 
 <body>
+    <!-- Container principal -->
     <div class="container">
         <h1>Codificador</h1>
-     
+
+        <!-- Caixa que receber o conteudo do usuario -->
         <textarea name="message" class="result" placeholder="Digite aqui"></textarea>
-      <div class="key-btn"> 
-        <span id="label">Chave Cifra: </span>
-        <button onclick="prev()">-</button>
-        <span id="key">1</span>
-        <button onclick="next()">+</button><br/><br/>
-    </div>  
-       
+        <!-- Butao da Chave que incrementa -->
+        <div class="key-btn">
+            <span id="label">Chave Cifra: </span>
+            <button onclick="prev()">-</button>
+            <span id="key">1</span>
+            <button onclick="next()">+</button><br /><br />
+        </div>
 
-        
+
+        <!--  Select de Base e Cifra -->
         <div class="select-main"> <label for="selecao">Código</label>
-        <select name="selecao" id="codigo">
-          <option disabled selected>--Selecione--</option>
-          <option value="cifra">Cifra de Cesar</option>
-          <option value="base">Base 64</option>
-        </select><br></div>
-       
+            <select name="selecao" id="codigo">
+                <option disabled selected>--Selecione--</option>
+                <option value="cifra">Cifra de Cesar</option>
+                <option value="base">Base 64</option>
+            </select><br>
+        </div>
 
-        <div class="btn-radio-box">  
-                    <div class="radio-btn"> 
-                        <input type="radio" id="codificar" name="codigo" value="codificar" class="codifica">
+        <!-- Radios buttons -->
+        <div class="btn-radio-box">
+            <div class="radio-btn">
+                <input type="radio" id="codificar" name="codigo" value="codificar" class="codifica">
                 <label for="codificar">Codificar</label>
             </div>
 
-                <div class="radio-btn"> <input type="radio" id="decodificar" name="codigo" value="decodificar" class="decodifica">
+            <div class="radio-btn"> <input type="radio" id="decodificar" name="codigo" value="decodificar"
+                    class="decodifica">
                 <label for="decodificar">Decodificar</label>
             </div>
-       
+
+        </div>
+
+
+        <!-- Btn  CODIFICA/DECODIFICA -->
+
+        <div class="click-btn">
+            <button class="input" onclick="codiBase()">Codifica</button>
+            <button class="output" onclick="decoBase()">Decodifica</button><br>
+
+        </div>
+
+        <!-- RESULTADO -->
+        <p class="result2"></p>
+
     </div>
-      
 
-        
 
-<div class="click-btn"> 
-     <button class="input" onclick="codiBase()" >Codifica</button>
-        <button class="output" onclick="decoBase()">Decodifica</button><br>
-    
-    </div>
-
-   
-    <p  class="result2"></p>
-
-    </div>
-
-   
 
     <script src="script.js"></script>
 </body>
